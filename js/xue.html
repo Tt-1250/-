@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+		<link rel="stylesheet"href="../css/reset.css" />
+		<link rel="stylesheet"href="../css/layout.css"/>
+		<title>MGP游戏商城首页</title>
+		<style>
+			.header-toolbar{
+				width: 250px;
+				height: 32px;
+				line-height: 32px;
+				background-color: #000000;
+				border-bottom-left-radius: 35px;
+				border-bottom-right-radius: 35px;
+				overflow: hidden;
+			}
+			.header-toolbar:hover{
+				height: 32px;
+			}
+			.header-toolbar__item{
+				display: inline;
+				margin: 0px auto;
+				color: #808080;
+				font-size: .8em;
+			}
+			.header-toolbar__item:hover{
+				color: #FFFFFF;
+			}
+			.header-toolbar__item--show{
+				display: none;
+			}
+			.icon-justify::before{
+				font-family: Glyphicons;content: "\e114";}
+			.icon-user::before{font-family: Glyphicons;content: "\e004";}
+			.icon-shopping-cart::before{font-family: Glyphicons;content: "\e203";}
+			.icon-search::before{font-family: Glyphicons;content: "\e028";}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div class="grid headder__content">
+				<div class="grid-cell-1 header-logo">
+					<a class="header-logo__link"href="index.html">
+						<img class="header-logo__img"src="../img/logo.png"/>游戏商城</a>
+				</div>
+				<nav class="grid-cell-3 header-nav">
+					<ul class="grid">
+						<li class="grid-cell-1 header-nav_-item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-home"title="商店"></span>
+								<span class="header-nav__link--hidden">商店</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="关于"></span>
+								<span class="header-nav__link--hidden">关于</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="社区"></span>
+								<span class="header-nav__link--hidden">社区</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="支持"></span>
+								<span class="header-nav__link--hidden">支持</span></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-toolbar">
+					<a href="#"class="header-toolbar__item">
+						<span class="icon icon-user"title="登陆"></span>登陆</a>
+						<a href="#"header-toolbar__item>
+							<span class="icon icon-shopping-cart"title="购物车"></span>购物车</a>
+							<a href="#"header-toolbar__item>
+								<span class="icon icon-search"title="搜索"></span>搜索</a>
+				</div>
+			</div>
+		</header>
+		<section id="conetent">中心内容区域</section>
+		<footer id="footer">页脚区域</footer>
+	</body>
+</html>

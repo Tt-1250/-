@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+		<link rel="stylesheet"href="css/reset.css" />
+		<link rel="stylesheet"href="css/layout.css" />
+		<title>MGP游戏商城首页</title>
+		<style>
+			#header{
+				width: 100%;
+				height: 60px;
+			}
+			.header__content{
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				box-shadow: 0px 2px 10px 3px #000000;
+				z-index: 100;
+				opacity: 0.9;
+				background-color: #333333;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				color: #FFFFFF;
+			}
+			.header-logo{
+				height: 60px;
+			}
+			.header-logo__img{
+				width: 48px;
+				height: 48px;
+			}
+			.header-logo__link{
+				font-size: 1.5em;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div class="grid header__content">
+				<div class="grid-cell-1 header-logo">
+					<a class="header-logo__link"href="index.html">
+						<img class="header-logo__img"src="img/logo.png"/>游戏商城
+					</a>
+				</div>
+				<nav class="grid-cell-3 header-nav">
+					顶部导航栏
+				</nav>
+				<div class="grid-cell-1 header-toolbar">
+					顶部功能区
+				</div>
+			</div>
+		</header>
+		<section id="conetent">
+			中心内容区域
+		</section>
+		<footer id="footer">
+			页脚区域
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+		<title>MGP游戏商城首页</title>
+		<link rel="stylesheet"href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/layout.css"/>
+		<style>
+			#header{width: 100%;  height: 60px;	}
+			.header__content{
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				box-shadow: 0px 2px 10px 3px #000000;
+				z-index: 100;
+				opacity: 0.9;
+				background-color: #333333;
+				text-align: center;
+				width: 100%;
+				height: 60px;
+				color: #FFFFFF;
+			}
+			.header-logo{height: 60px;  }
+			.header-logo__img{width: 48px;  height: 48px;   }
+			.header-logo__link{font-size: 1.5em; color: #FFFFFF;   }
+			.header-nav{  
+				height: 60px;
+				line-height: 60px;
+			}
+			.header-nav__item{
+				width: 100%;
+			}
+			.header-nav__item:hover{
+				background-color: #026873;
+				transition: all 600ms linear 0s;
+			}
+			.header-nav__link{
+				color: #FFFFFF;
+			}
+			.header-nav__link--hidden{
+				font-size: 1.2em;
+			}
+			@font-face {
+				font-family:'Glyphicons';
+				src:url('fonts/glyphicons-regular.eot');
+				src: url('fonts/glyphicons-regular.eot?#iefix')format('embeded-opentype'),
+				url('fonts/glyphicons-regular.woff')format('woff'),
+				url('fonts/glyphicons-regular.ttf')format('truetype'),
+				url('fonts/glyphicons-regular.svg#glyphicons_halfingsregular')format('svg');
+			}
+			.icon{
+			display: inline-block;
+		     -wekbkit-font-smoothing:antialiased;
+			 -moz-osx-font-smoothing: grayscale;
+			 position: relative;
+			 top: 1px;
+			 line-height: 1;
+			 font-weight: normal;
+			 font-style: normal;
+			}
+			.icon-home:before{
+				font-family: Glyphicons;
+				content: "\e021";
+			}
+			.icon-vcard:before{font-family: Glyphicons;content: "\e265";}
+			.icon-conversation::before{font-family: Glyphicons;content: "\e245";}
+			.icon-settings::before{font-family: Glyphicons;content: "\e281";}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div class="grid headder__content">
+				<div class="grid-cell-1 header-logo">
+					<a class="header-logo__link"href="index.html">
+						<img class="header-logo__img"src="../img/logo.png"/>游戏商城</a>
+				</div>
+				<nav class="grid-cell-3 header-nav">
+					<ul class="grid">
+						<li class="grid-cell-1 header-nav_-item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-home"title="商店"></span>
+								<span class="header-nav__link--hidden">商店</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="关于"></span>
+								<span class="header-nav__link--hidden">关于</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="社区"></span>
+								<span class="header-nav__link--hidden">社区</span></a>
+						</li>
+						<li class="grid-cell-1 header-nav__item">
+							<a class="header-nav__link"href="#">
+								<span class="inco inco-vcard"title="支持"></span>
+								<span class="header-nav__link--hidden">支持</span></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="grid-cell-1 header-toolbar">
+					顶部功能区
+				</div>
+			</div>
+		</header>
+		<section id="conetent">中心内容区域</section>
+		<footer id="footer">页脚区域</footer>
+	</body>
+</html>
